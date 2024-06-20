@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acik buka guna laptop</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #4682B4;
+            /* Biru Laut */
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            color:#FFFFFF;
+            /* white */
+        }
+
+        #bgImage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Redlion.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        #date {
+            font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px 4px #FFFFFF;
+            /* Hitam */
+            margin-bottom: 30px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.0);
+            /* Kotak semi-transparan hitam */
+            border-radius: 10px;
+        }
+
+        .container {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px#FFFFFF;
+            /* Hitam */
+            margin-bottom: 20px;
+            /* Tambahkan margin di antara setiap kontainer */
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.0);
+            /* Kotak semi-transparan hitam */
+            border-radius: 10px;
+            display: inline-block;
+            text-align: center;
+            /* Center align untuk desktop */
+        }
+
+        .balloon {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+            color: #FFFFFF;
+            /* Black */
+            font-size: 1.2em;
+            /* Besarkan ukuran font untuk elemen "balloon" */
+        }
+
+        .balloon:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        #typed {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFFFFF;
+            /* Hot Pink */
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px #FFFFFF;
+            /* Hitam */
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.0);
+            /* Kotak semi-transparan hitam */
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .text {
+            color: white;
+            /* Warna teks putih */
+            text-shadow: 2px 2px 4px black;
+            /* Shadow di sekitar huruf */
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            /* Kotak semi-transparan hitam */
+            border-radius: 10px;
+        }
+
+        .highlight-box {
+            background-color: #000000;
+            /* Warna latar belakang kotak */
+            color: white;
+            /* Warna teks putih */
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px black;
+            /* Shadow di sekitar huruf */
+        }
+
+        /* Media query untuk ukuran desktop */
+        @media only screen and (min-width: 768px) {
+            .container {
+                font-size: 2.5em;
+                /* Kecilkan ukuran font untuk desktop */
+                margin-bottom: 30px;
+                /* Menyesuaikan margin untuk desktop */
+            }
+
+            #typed {
+                font-size: 1.2em;
+                /* Kecilkan ukuran font untuk desktop */
+            }
+
+            .container {
+                text-align: center;
+                /* Tetap center align untuk desktop */
+            }
+        }
+
+        /* Media query untuk ukuran mobile */
+        @media only screen and (max-width: 767px) {
+            .container {
+                font-size: 2em;
+                text-align: center;
+                /* Center align untuk mobile */
+            }
+
+            #typed {
+                font-size: 1em;
+            }
+        }
+
+        /* Tautan ditekan */
+        .container a:active {
+            color: Pink;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="typed-strings">
+            <p>KONTOLLLL</p>
+        </div>
+        <span id="typed"></span>
+    </div>
+    <div id="bgImage"></div>
+    <div id="date">🎉20/6/2024🎉</div>
+    <div class="container">
+        <span class="balloon">H</span>
+        <span class="balloon">A</span>
+        <span class="balloon">P</span>
+        <span class="balloon">P</span>
+        <span class="balloon">Y</span>
+        <div class="balloon-container">
+            <span class="balloon">B</span>
+            <span class="balloon">I</span>
+            <span class="balloon">R</span>
+            <span class="balloon">T</span>
+            <span class="balloon">H</span>
+            <span class="balloon">D</span>
+            <span class="balloon">A</span>
+            <span class="balloon">Y</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="highlight-box">Razali Bin Mat Dali</div>
+    </div>
+    <div class="text">
+        <p>wish paling special menang kat aku</p>
+        <p>selamat hari tua goblokkk hahaha</p>
+        <p>coding by redlion.</p>
+    </div>
+    <script>
+        var options = {
+            stringsElement: '#typed-strings',
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 2000,
+            startDelay: 1000,
+            loop: true,
+        };
+        var typed = new Typed('#typed', options);
+
+        function createFirework() {
+            const firework = document.createElement('div');
+            firework.className = 'firework';
+            firework.style.left = Math.random() * 100 + 'vw';
+            firework.style.top = Math.random() * 100 + 'vh';
+            document.body.appendChild(firework);
+            setTimeout(() => {
+                firework.remove();
+            }, 1500);
+        }
+        setInterval(createFirework, 500);
+
+        window.onload = function () {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "Happy Birthday To Acik sugaya, Happy Birthday To Acik sugaya";
+            msg.lang = 'ms-MY';
+
+            // Menunggu hingga suara tersedia
+            speechSynthesis.onvoiceschanged = function () {
+                var voices = speechSynthesis.getVoices();
+                msg.voice = voices.find(function (voice) {
+                    return voice.name === 'Google Bahasa Malaysia';
+                });
+
+                window.speechSynthesis.speak(msg);
+            };
+
+            // Mengaktifkan suara saat pautan ditekan di perangkat mobile
+            document.addEventListener('touchstart', function () {
+                window.speechSynthesis.speak(msg);
+            });
+        }
+    </script>
+</body>
+
+</html>
