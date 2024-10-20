@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Pra Perkahwinan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('WALLPAPER-KURSUS-KAHWIN.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.6); /* Kurangkan opacity putih */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .company-logo {
+            margin-bottom: 20px;
+        }
+
+        .company-logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .dates {
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .dates p {
+            margin-bottom: 5px;
+        }
+
+        .info-box {
+            background-color: rgba(240, 240, 240, 0.9); /* Kurangkan opacity putih */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .info-box p {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .yuran {
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .warning {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .contact {
+            background-color: rgba(240, 240, 240, 0.9); /* Kurangkan opacity putih */
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .social-names {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .social-names p {
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .dates p, .info-box p, .contact p {
+                font-size: 14px;
+            }
+
+            .price .yuran {
+                font-size: 16px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Syarikat -->
+        <div class="company-logo">
+            <img src="logo-syarikat.jpg" alt="Logo Syarikat">
+        </div>
+
+        <h1>KURSUS PRA PERKAHWINAN ISLAM</h1>
+        <h2>ZALINY BANDAR BAHARU</h2>
+
+        <div class="dates">
+            <p>2 & 3 NOVEMBER 2024</p>
+            <p>16 & 17 NOVEMBER 2024</p>
+            <p>SABTU - AHAD</p>
+        </div>
+
+        <div class="info-box">
+            <p>1. KURSUS 2 HARI</p>
+            <p>2. DIIKTIRAF JAKIM/JHEIK</p>
+            <p>3. MAKANAN TENGAH HARI DISEDIAKAN</p>
+            <p>4. PERCUMA KIT KURSUS (FILE, PEN, BUKU GERBANG)</p>
+        </div>
+
+        <div class="price">
+            <p class="yuran">YURAN RM100</p>
+            <p class="warning">DAFTAR SEGERA SEBELUM ADA KENAIKAN HARGA</p>
+        </div>
+
+        <div class="contact">
+            <p>012-4287999</p>
+            <p>013-6948869</p>
+        </div>
+
+        <div class="social">
+            <img src="logo-facebook.png" alt="Facebook Logo" class="logo">
+            <img src="logo-tiktok.png" alt="TikTok Logo" class="logo">
+        </div>
+
+        <div class="social-names">
+            <p>Kursus Kahwin Bandar Baharu</p>
+            <p>zalinybandarbaharu</p>
+        </div>
+    </div>
+</body>
+</html>
