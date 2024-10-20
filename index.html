@@ -23,7 +23,7 @@
         }
 
         .container {
-            max-width: 400px;
+            max-width: 800px; /* Lebar untuk desktop */
             width: 100%;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.6); /* Kurangkan opacity putih */
@@ -127,9 +127,10 @@
             margin: 0;
         }
 
+        /* Styling untuk mobile (max-width 600px) */
         @media only screen and (max-width: 600px) {
             .container {
-                max-width: 100%;
+                max-width: 100%; /* Auto adjust ikut mobile */
             }
 
             h1 {
